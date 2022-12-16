@@ -6,7 +6,7 @@ from math import factorial, isclose
 def clear_and_redraw():
     screen.fill((255, 255, 255))
     for i in range(count - 1):
-        pg.draw.line(screen, (0, 255, 0), points[i], points[i+1], 3)
+        pg.draw.line(screen, (0, 0, 255), points[i], points[i+1], 3)
     for i in range(count):
         pg.draw.rect(screen, (0, 0, 255), (points[i][0] - margin, points[i][1] - margin, 2 * margin, 2 * margin), 5)
 
